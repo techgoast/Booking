@@ -1,0 +1,84 @@
+{
+  "partners": [
+    {
+      "name": "Singabour Airlines",
+      "logo": "/assets/images/pngwing1.webp"
+    },
+    {
+      "name": "Turkish Airlines",
+      "logo": "/assets/images/pngwing2.webp"
+    },
+    {
+      "name": "American Airlines",
+      "logo": "/assets/images/pngwing3.webp"
+    },
+    {
+      "name": "Amerimexico Airlines",
+      "logo": "/assets/images/pngwing4.webp"
+    },
+    {
+      "name": "Ettihad Airlines",
+      "logo": "/assets/images/pngwing5.webp"
+    },
+    {
+      "name": "Iberia Airlines",
+      "logo": "/assets/images/pngwing6.webp"
+    }
+  ],
+  "topDestinations": [
+    {
+      "city": "North Male Atoll",
+      "country": "Maldives",
+      "cost": 289,
+      "image": "/assets/images/MLE.webp"
+    },
+    {
+      "city": "Ibiza",
+      "country": "Spain",
+      "cost": 299,
+      "image": "/assets/images/ibiza.webp"
+    },
+    {
+      "city": "Hurghada",
+      "country": "Egypt",
+      "cost": 53,
+      "image": "/assets/images/hurghada.webp"
+    },
+    {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "cost": 221,
+      "image": "/assets/images/copenhagen.webp"
+    },
+    {
+      "city": "Marsa Alam City",
+      "country": "Egypt",
+      "cost": 133,
+      "image": "/assets/images/marsaalam.webp"
+    },
+    {
+      "city": "Jazan",
+      "country": "Saudi Arabia",
+      "cost": 202,
+      "image": "/assets/images/jazan.webp"
+    },
+    {
+      "city": "Beirut",
+      "country": "Lebanon",
+      "cost": 183,
+      "image": "/assets/images/beirut.webp"
+    },
+    {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "cost": 182,
+      "image": "/assets/images/istanbul.webp"
+    },
+    {
+      "city": "Barcelona",
+      "country": "Spain",
+      "cost": 199,
+      "image": "/assets/images/barcelona.webp"
+    }
+  ]
+}

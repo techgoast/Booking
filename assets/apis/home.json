@@ -1,0 +1,44 @@
+{
+  "topDestinations":[{
+    "destination": "Rome, Italy",
+    "cost": 83000,
+    "duration": "4 days Trip",
+    "image": "/assets/images/dest.webp"
+  },
+  {
+    "destination": "Rome, Italy",
+    "cost": 83000,
+    "duration": "4 days Trip",
+    "image": "/assets/images/dest.webp"
+  },
+  {
+    "destination": "Rome, Italy",
+    "cost": 83000,
+    "duration": "4 days Trip",
+    "image": "/assets/images/dest.webp"
+  }],
+  "pricing":[{
+    "price": 99,
+    "tour": "Turkey Tour",
+    "image1": "assets/images/price-1.webp",
+    "image2": "assets/images/price-2.webp",
+    "desc": "We don't just work with concrete and steel, We are Approachable,",
+    "features": ["Generation Technology", "Generation Technology", "Generation Technology", "Generation Technology"]
+  },
+  {
+    "price": 199,
+    "tour": "England Tour",
+    "image1": "assets/images/price-2.webp",
+    "image2": "assets/images/price-1.webp",
+    "desc": "We don't just work with concrete and steel, We are Approachable,",
+    "features": ["Generation Technology", "Generation Technology", "Generation Technology", "Generation Technology"]
+  },
+  {
+    "price": 299,
+    "tour": "France Tour",
+    "image1": "assets/images/price-1.webp",
+    "image2": "assets/images/price-2.webp",
+    "desc": "We don't just work with concrete and steel, We are Approachable,",
+    "features": ["Generation Technology", "Generation Technology", "Generation Technology", "Generation Technology"]
+  }]
+}

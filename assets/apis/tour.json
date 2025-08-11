@@ -1,0 +1,238 @@
+{
+  "trips": [
+    {
+      "destination": "One",
+      "stars": 5,
+      "image": "/assets/images/trip1.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Cairo"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "destination": "Tow",
+      "stars": 5,
+      "image": "/assets/images/trip2.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Emirates"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "destination": "Three",
+      "stars": 5,
+      "image": "/assets/images/trip3.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Canada"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "destination": "Four",
+      "stars": 5,
+      "image": "/assets/images/trip4.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Canada"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "destination": "Five",
+      "stars": 5,
+      "image": "/assets/images/trip5.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Europe"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "destination": "Six",
+      "stars": 5,
+      "image": "/assets/images/trip6.webp",
+      "address": {
+        "icon": "fa-solid fa-location-dot",
+        "city":"Europe"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    }
+  ]
+}

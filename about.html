@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is booking web site" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+  </head>
+  <body class="font-sans">
+    <!-- start nav -->
+    <nav class="flex items-center justify-between p-5 font-semibold relative">
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            class="w-40 aspect-auto object-cover"
+            src="/assets/images/logo.webp"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <ul
+        class="w-1/2 flex items-center justify-evenly max-md:hidden data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
+        id="nav-links"
+      >
+        <li>
+          <a href="/hotel.html">
+            <i class="fa-solid fa-hotel"></i>
+            <span class="mx-1">Hotel</span>
+          </a>
+        </li>
+        <li>
+          <a href="/flight.html">
+            <i class="fa-solid fa-plane-up"></i>
+            <span class="mx-1">Flight</span>
+          </a>
+        </li>
+        <li>
+          <a href="/tour.html">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span class="mx-1">Tour</span>
+          </a>
+        </li>
+        <li>
+          <a href="/car.html">
+            <i class="fa-solid fa-car"></i>
+            <span class="mx-1">Car</span>
+          </a>
+        </li>
+      </ul>
+      <button
+        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-2 px-4 cursor-pointer max-md:hidden data-display:block data-display:absolute data-display:-bottom-6 data-display:right-6"
+        id="login-btn"
+      >
+        <a href="/log-in.html">Log In / Sign Up</a>
+      </button>
+      <div class="hidden max-md:block cursor-pointer" id="nav-menue">menue</div>
+    </nav>
+    <!-- end nav -->
+    <!-- start main section -->
+    <section>
+      <div class="w-[80%] max-sm:w-full mx-auto p-10">
+        <h2 class="text-[36px] font-bold my-5">About Us</h2>
+        <p class="w-[80%] max-sm:w-full my-10">
+          Founded in early 90s in Our Country, We Have grown from a small
+          startup to one of the world's leading digital travel companies. Part
+          of Our Holdings Inc. (company X), the mission of Our Company is to
+          make it easier for everyone to experience the world.
+        </p>
+        <p class="w-[80%] max-sm:w-full my-10">
+          By investing in the technology that helps take the friction out of
+          travel, We seamlessly connects millions of travellers with memorable
+          experiences, a range of transport options and incredible places to
+          stay - from homes to hotels and much more. As one of the world's
+          largest travel marketplaces for both established brands and
+          entrepreneurs of all sizes, We enable properties all over the world to
+          reach a global audience and grow their businesses.
+        </p>
+        <p class="w-[80%] max-sm:w-full my-10">
+          We are available in many languages and offer more than millions total
+          reported accommodation listings, including over millions listings
+          alone of homes, apartments and other unique places to stay. No matter
+          where you want to go or what you want to do, We make it easy and backs
+          it all up with 24/7 customer support.
+        </p>
+      </div>
+    </section>
+    <!-- end main section -->
+    <!-- start footer -->
+    <footer class="bg-[#f5f3ff] p-5">
+      <h2 class="text-xl font-bold">Quick Links:</h2>
+      <div class="flex flex-wrap justify-around p-2">
+        <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
+          <li class="py-2 my-3">
+            <a href="/about.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">About Us</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/contact.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Contact Us</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/history.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Our history</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
+          <li class="py-2 my-3">
+            <a href="/flight.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Flights</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/hotel.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Hotels</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/car.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Car</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
+          <li class="py-2 my-3">
+            <a href="/faq.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">FAQ</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/terms.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Terms &amp; Use</span>
+            </a>
+          </li>
+          <li class="py-2 my-3">
+            <a href="/awards.html">
+              <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
+              <span class="mx-1">Awards</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
+          <li class="py-2 my-3">
+            <i class="fa-solid fa-phone text-[#7c3aed]"></i>
+            <span class="mx-1">666 888 0000</span>
+          </li>
+          <li class="py-2 my-3">
+            <i class="fa-solid fa-inbox text-[#7c3aed]"></i>
+            <span class="mx-1">needhelp@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-wrap justify-center my-5 py-5">
+        <img
+          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
+          src="/assets/images/pv1.webp"
+          alt="footer-pic"
+        />
+        <img
+          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
+          src="/assets/images/pv2.webp"
+          alt="footer-pic"
+        />
+        <img
+          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
+          src="/assets/images/pv3.webp"
+          alt="footer-pic"
+        />
+        <img
+          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
+          src="/assets/images/pv5.webp"
+          alt="footer-pic"
+        />
+      </div>
+      <div class="my-5 py-5 flex flex-wrap max-md:block max-md:text-center">
+        <p class="md:w-1/2">Made By Mostafa</p>
+        <p class="md:w-1/2">&copy; Copy Rights 2024. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

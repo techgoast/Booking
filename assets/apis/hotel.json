@@ -1,0 +1,482 @@
+{
+  "partners": [
+    {
+      "name": "corinthia",
+      "logo": "/assets/images/pngegg1.webp"
+    },
+    {
+      "name": "Hayatt",
+      "logo": "/assets/images/pngegg2.webp"
+    },
+    {
+      "name": "Accorhotels",
+      "logo": "/assets/images/pngegg.webp"
+    },
+    {
+      "name": "Novotel",
+      "logo": "/assets/images/11.webp"
+    },
+    {
+      "name": "Helton",
+      "logo": "/assets/images/12.webp"
+    }
+  ],
+  "bestRooms": [
+    {
+      "type": "Single Room",
+      "image": "/assets/images/room1.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Luxury Room",
+      "image": "/assets/images/room2.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Double Room",
+      "image": "/assets/images/room3.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Double Room",
+      "image": "/assets/images/room4.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Luxury Room",
+      "image": "/assets/images/room5.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Single Room",
+      "image": "/assets/images/room6.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Single Room",
+      "image": "/assets/images/room1.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Luxury Room",
+      "image": "/assets/images/room2.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Double Room",
+      "image": "/assets/images/room3.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Double Room",
+      "image": "/assets/images/room4.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Luxury Room",
+      "image": "/assets/images/room5.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    },
+    {
+      "type": "Single Room",
+      "image": "/assets/images/room6.webp",
+      "location": {
+        "icon": "fa-solid fa-location-dot",
+        "address":"123 Kathal St, Tampa City"
+      },
+      "bed": {
+        "available": true,
+        "icon": "fa-solid fa-bed",
+        "text": "4 bed"
+      },
+      "parking": {
+        "available": true,
+        "icon": "fa-solid fa-square-parking",
+        "text": "Parking"
+      },
+      "breakfast": {
+        "available": true,
+        "icon": "fa-solid fa-mug-hot",
+        "text": "Breakfast"
+      },
+      "ac": {
+        "available": true,
+        "icon": "fa-solid fa-bolt-lightning",
+        "text": "AC"
+      },
+      "wifi": {
+        "available": true,
+        "icon": "fa-solid fa-wifi",
+        "text": "freeWifi"
+      },
+      "laundry": {
+        "available": true,
+        "icon": "fa-solid fa-jug-detergent",
+        "text": "Laundry"
+      }
+    }
+  ]
+}
