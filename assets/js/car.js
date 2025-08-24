@@ -15,7 +15,7 @@ window.addEventListener("load", async () => {
 function topOffersUI(data) {
   for (let i = 0; i < data.length; i++) {
     topOffers.innerHTML += `
-      <div class="w-[450px] max-w-[100%]  rounded-2xl">
+      <div class="w-[450px] max-w-[100%] relative rounded-2xl">
         <div
           class="w-full h-[250px] bg-[url(../images/${data[i].image})] bg-no-repeat bg-cover rounded-t-2xl"
         ></div>
@@ -29,13 +29,25 @@ function topOffersUI(data) {
           <button
           class="py-2 px-3 bg-[#7c3aed] text-white cursor-pointer rounded-full"
           data-display
+          id="book-${i}"
         >
           Book Now
         </button>
         </div>
+        <div class="absolute top-0 left-0 w-full h-full bg-white opacity-[.8] justify-center items-center text-green-500 font-black text-[25px] hidden" id="res-${i}" onclick="this.classList.remove('flex');this.classList.add('hidden')">Your Request Has Been Successfully Sent</div>
       </div>
-    `;
-  }
+      `;
+    }
+    for (let i = 0; i < data.length; i++) {
+      assignClickEvent(`book-${i}`,`res-${i}`);
+    }
+}
+
+function assignClickEvent(id,targetId) {
+  document.getElementById(id).addEventListener("click", () => {
+    document.getElementById(targetId).classList.remove("hidden");
+    document.getElementById(targetId).classList.add("flex");
+  })
 }
 
 viewMore.addEventListener("click", (e) => {
