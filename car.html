@@ -5,72 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="this is booking web site" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body class="font-sans">
     <!-- start nav -->
     <nav class="flex items-center justify-between p-5 font-semibold relative">
       <div class="logo">
-        <a href="/index.html">
+        <a href="./index.html">
           <img
-            class="w-40 aspect-auto object-cover"
-            src="/assets/images/logo.webp"
+            class="w-[160px] h-[50px] aspect-auto object-cover"
+            src="./assets/images/logo.webp"
             alt="logo"
           />
         </a>
       </div>
       <ul
-        class="w-1/2 flex items-center justify-evenly max-md:hidden data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
+        class="w-1/2 flex items-center justify-evenly max-md:hidden z-100 data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
         id="nav-links"
       >
         <li>
-          <a href="/hotel.html">
+          <a href="./hotel.html">
             <i class="fa-solid fa-hotel"></i>
             <span class="mx-1">Hotel</span>
           </a>
         </li>
         <li>
-          <a href="/flight.html">
+          <a href="./flight.html">
             <i class="fa-solid fa-plane-up"></i>
             <span class="mx-1">Flight</span>
           </a>
         </li>
         <li>
-          <a href="/tour.html">
+          <a href="./tour.html">
             <i class="fa-solid fa-earth-americas"></i>
             <span class="mx-1">Tour</span>
           </a>
         </li>
         <li>
-          <a href="/car.html">
+          <a href="./car.html">
             <i class="fa-solid fa-car"></i>
             <span class="mx-1">Car</span>
           </a>
         </li>
       </ul>
       <button
-        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-2 px-4 cursor-pointer max-md:hidden data-display:block data-display:absolute data-display:-bottom-6 data-display:right-6"
+        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-3 px-5  cursor-pointer max-md:hidden data-display:block z-100 data-display:absolute data-display:-bottom-6 data-display:right-6"
         id="login-btn"
       >
-        <a href="/log-in.html">Log In / Sign Up</a>
+        <a href="./log-in.html" class="">Log In / Sign Up</a>
       </button>
       <div class="hidden max-md:block cursor-pointer" id="nav-menue">menue</div>
     </nav>
     <!-- start landing section -->
     <section
-      class="h-[80vh] bg-[url(/assets/images/rc-hero.webp)] bg-no-repeat bg-cover bg-center p-5 flex items-center"
+      class="h-[80vh] max-[425px]:bg-[url(../images/rc-hero-mob.webp)] min-[425px]:max-md:bg-[url(../images/rc-hero-md.webp)] min-md:max-lg:bg-[url(../images/rc-hero-lg.webp)] min-lg:max-2xl:bg-[url(../images/rc-hero-xlg.webp)] 2xl:bg-[url(../images/rc-hero.webp)] bg-no-repeat bg-cover bg-center p-5 flex items-center"
     >
-      <form action="" class="w-1/2 max-sm:w-full bg-white rounded-2xl pb-5">
+      <form action="" class="w-1/2 max-sm:w-full bg-white rounded-2xl pb-5 relative" id="car-form">
         <div class="flex flex-wrap justify-center items-center gap-2 p-5">
           <div class="w-[48%] max-md:w-full flex flex-wrap">
             <label for="pickup-location">pickup-location</label>
@@ -81,6 +72,21 @@
               placeholder="pickup-location"
               id="pickup-location"
             />
+            <div class="w-full hidden" id="pick-up-setter">
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store1" value="store1" checked>
+                <label for="pick-up-store1">Store1</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store2" value="store2">
+                <label for="pick-up-store2">Store2</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store3" value="store3">
+                <label for="pick-up-store3">Store3</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-pick-up">Set Pic Up Location</div>
+            </div>
           </div>
           <div class="w-[48%] max-md:w-full flex flex-wrap">
             <label for="dropoff-location">dropoff-location</label>
@@ -91,6 +97,21 @@
               placeholder="dropoff-location"
               id="dropoff-location"
             />
+            <div class="w-full hidden" id="drop-off-setter">
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store1" value="store1" checked>
+                <label for="drop-off-store1">Store1</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store2" value="store2">
+                <label for="drop-off-store2">Store2</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store3" value="store3">
+                <label for="drop-off-store3">Store3</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-drop-off">Set Pic Up Location</div>
+            </div>
           </div>
           <div class="w-[48%] max-md:w-full flex flex-wrap">
             <label for="pickup-date">pickup-date</label>
@@ -119,6 +140,10 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+        <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="car-submit-res">
+          <div class="text-green-500 text-[42px] font-black hidden" id="car-res-succ">Your Request Has Been Successfully Sent</div>
+          <div class="text-red-500 text-[42px] font-black hidden" id="car-res-failed">Please Fill All Fields</div>
+        </div>
       </form>
     </section>
     <!-- end landing section -->
@@ -146,7 +171,7 @@
       </div>
     </section>
     <!-- end top car rental offers -->
-    <!-- start parteners section -->
+    <!-- start sanitize section -->
     <section class="px-5 py-10">
       <h2 class="text-[32px] font-bold">Sanitized &amp; Safe Cars</h2>
       <ul
@@ -154,26 +179,26 @@
         id="sanitize-safety"
       ></ul>
     </section>
-    <!-- end parteners section -->
+    <!-- end sanitize section -->
     <!-- start footer -->
     <footer class="bg-[#f5f3ff] p-5">
       <h2 class="text-xl font-bold">Quick Links:</h2>
       <div class="flex flex-wrap justify-around p-2">
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/about.html">
+            <a href="./about.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">About Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/contact.html">
+            <a href="./contact.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Contact Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/history.html">
+            <a href="./history.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Our history</span>
             </a>
@@ -181,19 +206,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/flight.html">
+            <a href="./flight.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Flights</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/hotel.html">
+            <a href="./hotel.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Hotels</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/car.html">
+            <a href="./car.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Car</span>
             </a>
@@ -201,19 +226,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/faq.html">
+            <a href="./faq.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">FAQ</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/terms.html">
+            <a href="./terms.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Terms &amp; Use</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/awards.html">
+            <a href="./awards.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Awards</span>
             </a>
@@ -232,23 +257,27 @@
       </div>
       <div class="flex flex-wrap justify-center my-5 py-5">
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv1.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv1.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv2.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv2.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv3.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv3.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv5.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv5.webp"
           alt="footer-pic"
         />
       </div>
@@ -258,7 +287,7 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/car.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/car.js"></script>
   </body>
 </html>

@@ -5,64 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="this is booking web site" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./assets/css/icons2.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-  <body class="font-sans">
+  <body>
     <!-- start nav -->
     <nav class="flex items-center justify-between p-5 font-semibold relative">
       <div class="logo">
-        <a href="/index.html">
+        <a href="./index.html">
           <img
-            class="w-40 aspect-auto object-cover"
-            src="/assets/images/logo.webp"
+            class="w-[160px] h-[50px] aspect-auto object-cover"
+            src="./assets/images/logo.webp"
             alt="logo"
           />
         </a>
       </div>
       <ul
-        class="w-1/2 flex items-center justify-evenly max-md:hidden data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
+        class="w-1/2 flex items-center justify-evenly max-md:hidden z-100 data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
         id="nav-links"
       >
         <li>
-          <a href="/hotel.html">
+          <a href="./hotel.html">
             <i class="fa-solid fa-hotel"></i>
             <span class="mx-1">Hotel</span>
           </a>
         </li>
         <li>
-          <a href="/flight.html">
+          <a href="./flight.html">
             <i class="fa-solid fa-plane-up"></i>
             <span class="mx-1">Flight</span>
           </a>
         </li>
         <li>
-          <a href="/tour.html">
+          <a href="./tour.html">
             <i class="fa-solid fa-earth-americas"></i>
             <span class="mx-1">Tour</span>
           </a>
         </li>
         <li>
-          <a href="/car.html">
+          <a href="./car.html">
             <i class="fa-solid fa-car"></i>
             <span class="mx-1">Car</span>
           </a>
         </li>
       </ul>
       <button
-        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-2 px-4 cursor-pointer max-md:hidden data-display:block data-display:absolute data-display:-bottom-6 data-display:right-6"
+        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-3 px-5  cursor-pointer max-md:hidden data-display:block z-100 data-display:absolute data-display:-bottom-6 data-display:right-6"
         id="login-btn"
       >
-        <a href="/log-in.html">Log In / Sign Up</a>
+        <a href="./log-in.html" class="">Log In / Sign Up</a>
       </button>
       <div class="hidden max-md:block cursor-pointer" id="nav-menue">menue</div>
     </nav>
@@ -85,7 +76,7 @@
         </p>
       </div>
       <div
-        class="w-1/2 h-full bg-[url(/assets/images/intro.webp)] bg-no-repeat bg-contain bg-center max-md:w-full"
+        class="w-1/2 h-full max-[425px]:bg-[url(../images/intro-mob.webp)] min-[425px]:max-md:bg-[url(../images/intro-sm.webp)] min-md:max-lg:bg-[url(../images/intro-md.webp)] min-lg:max-2xl:bg-[url(../images/intro-lg.webp)] 2xl:bg-[url(../images/intro-xlg.webp)] bg-no-repeat bg-contain bg-center max-md:w-full"
       ></div>
     </section>
     <!-- end landing section -->
@@ -130,7 +121,7 @@
         </li>
       </ul>
       <!-- hotel form -->
-      <form action="" class="hidden peer-[&[category=hotel]]:block">
+      <form action="" class="hidden peer-[&[category=hotel]]:block relative" id="hotel-form">
         <div class="flex flex-wrap justify-center items-center gap-2 p-5">
           <div class="w-64 flex flex-wrap">
             <label for="room">guest</label>
@@ -141,6 +132,21 @@
               placeholder="2 Adults 4 Childs 2 Rooms"
               id="room"
             />
+            <div class="w-full hidden" id="guest-setter">
+              <div class="w-full flex justify-between items-center p-2">
+                <label for="adults">adults</label>
+                <input type="number" name="adults" id="adults" class="text-center w-[80px] py-1 border border-[#7c3aed] bg-[#f5f3ff] rounded-lg" value="1">
+              </div>
+              <div class="w-full flex justify-between items-center p-2">
+                <label for="childs">childs</label>
+                <input type="number" name="childs" id="childs" class="text-center w-[80px] py-1 border border-[#7c3aed] bg-[#f5f3ff] rounded-lg" value="1">
+              </div>
+              <div class="w-full flex justify-between items-center p-2">
+                <label for="rooms">rooms</label>
+                <input type="number" name="rooms" id="rooms" class="text-center w-[80px] py-1 border border-[#7c3aed] bg-[#f5f3ff] rounded-lg" value="1">
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-guest">Set Guest</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="check-in">check-in</label>
@@ -163,14 +169,29 @@
             />
           </div>
           <div class="w-64 flex flex-wrap">
-            <label for="dest">destination</label>
+            <label for="hotel-dest">destination</label>
             <input
               type="text"
               class="w-full border border-[#7c3aed] bg-[#f5f3ff] rounded-lg my-3 p-1"
-              name="dest"
+              name="hotel-dest"
               placeholder="Destination"
-              id="dest"
+              id="hotel-dest"
             />
+            <div class="w-full hidden" id="hotel-destination-setter">
+              <div class="p-2">
+                <input type="radio" name="dest" id="hotel-cairo" value="cairo" checked>
+                <label for="hotel-cairo">Cairo</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="dest" id="hotel-alex" value="alexandria">
+                <label for="hotel-alex">Alexandria</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="dest" id="hotel-hurghada" value="hurghada">
+                <label for="hotel-hurghada">Hurghada</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-hotel-dest">Set Destination</div>
+            </div>
           </div>
         </div>
         <div class="text-center">
@@ -179,9 +200,13 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+        <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="hotel-submit-res">
+          <div class="text-green-500 text-[42px] font-black hidden" id="hotel-res-succ">Your Request Has Been Successfully Sent</div>
+          <div class="text-red-500 text-[42px] font-black hidden" id="hotel-res-failed">Please Fill All Fields</div>
+        </div>
       </form>
       <!-- flight form -->
-      <form action="" class="hidden peer-[&[category=flight]]:block">
+      <form action="" class="hidden peer-[&[category=flight]]:block relative" id="flight-form">
         <div class="flex flex-wrap justify-center items-center gap-2 p-5">
           <div class="w-64 flex flex-wrap">
             <label for="from">from</label>
@@ -192,6 +217,21 @@
               placeholder="from"
               id="from"
             />
+            <div class="w-full hidden" id="flight-from-setter">
+              <div class="p-2">
+                <input type="radio" name="flight-from" id="flight-from-cairo" value="cairo" checked>
+                <label for="flight-from-cairo">Cairo</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-from" id="flight-from-alex" value="alexandria">
+                <label for="flight-from-alex">Alexandria</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-from" id="flight-from-hurghada" value="hurghada">
+                <label for="flight-from-hurghada">Hurghada</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-from">Set Flight From</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="to">to</label>
@@ -202,6 +242,21 @@
               placeholder="to"
               id="to"
             />
+            <div class="w-full hidden" id="flight-to-setter">
+              <div class="p-2">
+                <input type="radio" name="flight-to" id="flight-to-cairo" value="cairo" checked>
+                <label for="flight-to-cairo">Cairo</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-to" id="flight-to-alex" value="alexandria">
+                <label for="flight-to-alex">Alexandria</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-to" id="flight-to-hurghada" value="hurghada">
+                <label for="flight-to-hurghada">Hurghada</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-to">Set Flight To</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="depart">departure</label>
@@ -242,6 +297,21 @@
               placeholder="class"
               id="class"
             />
+            <div class="w-full hidden" id="flight-class-setter">
+              <div class="p-2">
+                <input type="radio" name="flight-class" id="flight-class-luxury" value="luxury" checked>
+                <label for="flight-class-luxury">Luxury</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-class" id="flight-class-business" value="business">
+                <label for="flight-class-business">Business</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="flight-class" id="flight-class-economy" value="economy">
+                <label for="flight-class-economy">Economy</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-class">Set Flight Class</div>
+            </div>
           </div>
         </div>
         <div class="text-center">
@@ -250,19 +320,38 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+        <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="flight-submit-res">
+          <div class="text-green-500 text-[42px] font-black hidden" id="flight-res-succ">Your Request Has Been Successfully Sent</div>
+          <div class="text-red-500 text-[42px] font-black hidden" id="flight-res-failed">Please Fill All Fields</div>
+        </div>
       </form>
       <!-- tour form -->
-      <form action="" class="hidden peer-[&[category=tour]]:block">
+      <form action="" class="hidden peer-[&[category=tour]]:block relative" id="tour-form">
         <div class="flex flex-wrap justify-center items-center gap-2 p-5">
           <div class="w-64 flex flex-wrap">
-            <label for="dest">destination</label>
+            <label for="tour-desti">destination</label>
             <input
               type="text"
               class="w-full border border-[#7c3aed] bg-[#f5f3ff] rounded-lg my-3 p-1"
-              name="dest"
+              name="tour-desti"
               placeholder="destination"
-              id="dest"
+              id="tour-desti"
             />
+            <div class="w-full hidden" id="tour-dest-setter">
+              <div class="p-2">
+                <input type="radio" name="tour-dest" id="tour-dest-cairo" value="cairo" checked>
+                <label for="tour-dest-cairo">Cairo</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="tour-dest" id="tour-dest-alex" value="alexandria">
+                <label for="tour-dest-alex">Alexandria</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="tour-dest" id="tour-dest-hurghada" value="hurghada">
+                <label for="tour-dest-hurghada">Hurghada</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-tour-dest">Set Tour Destination</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="persons">persons</label>
@@ -301,9 +390,13 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+        <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="tour-submit-res">
+          <div class="text-green-500 text-[42px] font-black hidden" id="tour-res-succ">Your Request Has Been Successfully Sent</div>
+          <div class="text-red-500 text-[42px] font-black hidden" id="tour-res-failed">Please Fill All Fields</div>
+        </div>
       </form>
       <!-- car form -->
-      <form action="" class="hidden peer-[&[category=car]]:block">
+      <form action="" class="hidden peer-[&[category=car]]:block relative" id="car-form">
         <div class="flex flex-wrap justify-center items-center gap-2 p-5">
           <div class="w-64 flex flex-wrap">
             <label for="pickup-location">pickup-location</label>
@@ -314,6 +407,21 @@
               placeholder="pickup-location"
               id="pickup-location"
             />
+            <div class="w-full hidden" id="pick-up-setter">
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store1" value="store1" checked>
+                <label for="pick-up-store1">Store1</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store2" value="store2">
+                <label for="pick-up-store2">Store2</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="pick-up" id="pick-up-store3" value="store3">
+                <label for="pick-up-store3">Store3</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-pick-up">Set Pic Up Location</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="dropoff-location">dropoff-location</label>
@@ -324,6 +432,21 @@
               placeholder="dropoff-location"
               id="dropoff-location"
             />
+            <div class="w-full hidden" id="drop-off-setter">
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store1" value="store1" checked>
+                <label for="drop-off-store1">Store1</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store2" value="store2">
+                <label for="drop-off-store2">Store2</label>
+              </div>
+              <div class="p-2">
+                <input type="radio" name="drop-off" id="drop-off-store3" value="store3">
+                <label for="drop-off-store3">Store3</label>
+              </div>
+              <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-drop-off">Set Pic Up Location</div>
+            </div>
           </div>
           <div class="w-64 flex flex-wrap">
             <label for="pickup-date">pickup-date</label>
@@ -352,6 +475,10 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+        <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="car-submit-res">
+          <div class="text-green-500 text-[42px] font-black hidden" id="car-res-succ">Your Request Has Been Successfully Sent</div>
+          <div class="text-red-500 text-[42px] font-black hidden" id="car-res-failed">Please Fill All Fields</div>
+        </div>
       </form>
     </div>
     <!-- end search form -->
@@ -361,7 +488,7 @@
         Top Destinations
       </h2>
       <div
-        class="py-5 flex flex-wrap justify-center items-center gap-5"
+        class="py-5 min-h-[425px] flex flex-wrap justify-center items-center gap-5"
         id="dest-UI"
       ></div>
     </section>
@@ -379,17 +506,17 @@
         </h2>
         <div class="mt-10 flex items-center">
           <img
-            src="/assets//images/4.webp"
+            src="./assets/images/4.webp"
             alt="profile"
             class="w-[30px] h-[30px] rounded-full border-[3px] border-white"
           />
           <img
-            src="/assets//images/4.webp"
+            src="./assets/images/4.webp"
             alt="profile"
             class="w-[30px] h-[30px] rounded-full ml-[-15px] border-[3px] border-white"
           />
           <img
-            src="/assets//images/4.webp"
+            src="./assets/images/4.webp"
             alt="profile"
             class="w-[30px] h-[30px] rounded-full ml-[-15px] border-[3px] border-white"
           />
@@ -405,7 +532,7 @@
         class="w-[40%] max-[1370px]:w-[80%] max-sm:w-full flex justify-center max-md:flex-wrap gap-5 pl-20 max-[1370px]:p-5"
       >
         <div
-          class="w-64 h-96 rounded-full bg-[url(/assets/images/45ad04555484779e8afe3ff8141a90e4.webp)] bg-contain bg-no-repeat"
+          class="w-64 h-96 rounded-full bg-[url(../images/adventure.webp)] bg-contain bg-no-repeat"
         ></div>
         <div class="w-[50%] max-md:w-full">
           <div>
@@ -423,9 +550,9 @@
               class="ml-[-100px] max-md:ml-0 my-2 py-2 px-6 max-md:px1 font-medium bg-[#fbfbfb] rounded-full flex items-center justify-between"
             >
               <img
-                src="/assets/images/exp.webp"
+                src="./assets/images/exp.webp"
                 alt="experience"
-                class="rounded-full max-[450px]:hidden"
+                class="w-[70px] h-[70px] rounded-full max-[450px]:hidden"
               />
               <div class="leading-[1]">
                 <p>We Have More than 10</p>
@@ -456,13 +583,13 @@
       class="px-3 py-20 flex flex-wrap justify-between max-[1100px]:justify-center"
     >
       <div
-        class="w-[48%] max-[1100px]:w-[80%] bg-[#7c3aed] relative rounded-t-full max-[916px]:hidden"
+        class="w-[48%] h-[693px] max-[1100px]:w-[80%] bg-[#7c3aed] relative rounded-t-full max-[916px]:overflow-hidden "
       >
         <div
-          class="w-1/2 h-full mx-auto bg-[url(/assets/images/phone.webp)] bg-no-repeat bg-cover rounded-t-4xl"
+          class="w-1/2 max-md:w-full h-full mx-auto bg-[url(../images/phone.webp)] bg-no-repeat bg-cover rounded-t-4xl"
         ></div>
         <div
-          class="w-1/2 h-1/2 bg-[url(/assets/images/phone-2.webp)] bg-no-repeat absolute bg-cover -bottom-10 -right-25"
+          class="w-1/2 h-1/2 bg-[url(../images/phone-2.webp)] bg-no-repeat absolute bg-cover -bottom-10 -right-25 max-md:hidden"
         ></div>
       </div>
       <div
@@ -502,7 +629,7 @@
         </ul>
         <div class="flex flex-wrap justify-center items-center p-5 gap-10">
           <a
-            href="/download.html"
+            href="./download.html"
             class="w-[200px] bg-black text-white mt-10 p-3 flex items-center gap-2 rounded-lg"
           >
             <i class="fa-brands fa-google-play text-[30px]"></i>
@@ -512,7 +639,7 @@
             </div>
           </a>
           <a
-            href="/download.html"
+            href="./download.html"
             class="w-[200px] bg-black text-white mt-10 p-3 flex items-center gap-2 rounded-lg"
           >
             <i class="fa-brands fa-apple text-[30px]"></i>
@@ -544,13 +671,13 @@
     <!-- end heading section -->
     <!-- start photo section -->
     <section class="p-5">
-      <div class="h-[300px] bg-[url(/assets/images/pv3.webp)] bg-bottom"></div>
+      <div class="h-[300px] max-[425px]:h-[200px] max-[425px]:bg-[url(../images/photo-mob.webp)] min-[425px]:max-md:bg-[url(../images/photo-md.webp)] min-md:max-lg:bg-[url(../images/photo-lg.webp)] lg:bg-[url(../images/photo-xlg.webp)] bg-center"></div>
     </section>
     <!-- end photo section -->
     <!-- start price section -->
-    <section class="p-10 min-h-[100vh] relative">
+    <section class="p-10 min-h-[100vh] relative" id="pricing-section">
       <div
-        class="w-[98%] h-1/2 bg-[url(/assets/images/price-bg.webp)] bg-contain absolute top-0 left-[1%] -z-1"
+        class="w-[98%] h-1/2 bg-[url(../images/price-bg.webp)] bg-contain absolute top-0 left-[1%] -z-1"
       ></div>
       <div class="text-center mb-10">
         <p class="tracking-tighter">Get To Know Us</p>
@@ -572,19 +699,19 @@
       <div class="flex flex-wrap justify-around p-2">
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/about.html">
+            <a href="./about.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">About Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/contact.html">
+            <a href="./contact.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Contact Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/history.html">
+            <a href="./history.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Our history</span>
             </a>
@@ -592,19 +719,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/flight.html">
+            <a href="./flight.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Flights</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/hotel.html">
+            <a href="./hotel.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Hotels</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/car.html">
+            <a href="./car.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Car</span>
             </a>
@@ -612,19 +739,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/faq.html">
+            <a href="./faq.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">FAQ</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/terms.html">
+            <a href="./terms.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Terms &amp; Use</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/awards.html">
+            <a href="./awards.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Awards</span>
             </a>
@@ -643,23 +770,27 @@
       </div>
       <div class="flex flex-wrap justify-center my-5 py-5">
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv1.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv1.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv2.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv2.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv3.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv3.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv5.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv5.webp"
           alt="footer-pic"
         />
       </div>
@@ -669,7 +800,7 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/home.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>

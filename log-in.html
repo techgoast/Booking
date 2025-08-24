@@ -5,64 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="this is booking web site" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body class="font-sans">
     <!-- start nav -->
     <nav class="flex items-center justify-between p-5 font-semibold relative">
       <div class="logo">
-        <a href="/index.html">
+        <a href="./index.html">
           <img
-            class="w-40 aspect-auto object-cover"
-            src="/assets/images/logo.webp"
+            class="w-[160px] h-[50px] aspect-auto object-cover"
+            src="./assets/images/logo.webp"
             alt="logo"
           />
         </a>
       </div>
       <ul
-        class="w-1/2 flex items-center justify-evenly max-md:hidden data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
+        class="w-1/2 flex items-center justify-evenly max-md:hidden z-100 data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
         id="nav-links"
       >
         <li>
-          <a href="/hotel.html">
+          <a href="./hotel.html">
             <i class="fa-solid fa-hotel"></i>
             <span class="mx-1">Hotel</span>
           </a>
         </li>
         <li>
-          <a href="/flight.html">
+          <a href="./flight.html">
             <i class="fa-solid fa-plane-up"></i>
             <span class="mx-1">Flight</span>
           </a>
         </li>
         <li>
-          <a href="/tour.html">
+          <a href="./tour.html">
             <i class="fa-solid fa-earth-americas"></i>
             <span class="mx-1">Tour</span>
           </a>
         </li>
         <li>
-          <a href="/car.html">
+          <a href="./car.html">
             <i class="fa-solid fa-car"></i>
             <span class="mx-1">Car</span>
           </a>
         </li>
       </ul>
       <button
-        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-2 px-4 cursor-pointer max-md:hidden data-display:block data-display:absolute data-display:-bottom-6 data-display:right-6"
+        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-3 px-5  cursor-pointer max-md:hidden data-display:block z-100 data-display:absolute data-display:-bottom-6 data-display:right-6"
         id="login-btn"
       >
-        <a href="/log-in.html">Log In / Sign Up</a>
+        <a href="./log-in.html" class="">Log In / Sign Up</a>
       </button>
       <div class="hidden max-md:block cursor-pointer" id="nav-menue">menue</div>
     </nav>
@@ -73,38 +64,43 @@
         class="group w-[70%] max-sm:w-[95%] rounded-2xl shadow-md flex flex-wrap justify-center border border-[#f3f4f6]"
         id="container"
       >
-        <div class="w-1/2 max-lg:w-full p-5 group-[&[signup]]:hidden">
+        <div class="w-1/2 max-lg:w-full p-5 group-[&[signup]]:hidden relative">
           <h2
             class="text-[36px] font-bold py-2 relative after:w-[20px] after:h-[3px] after:bg-black after:absolute after:-bottom-0 after:left-0"
           >
             Sign In
           </h2>
-          <form action="" class="p-5">
+          <form action="" class="p-5" id="signin-form">
             <input
               type="text"
-              id="user-name"
-              name="user-name"
+              id="signin-user-name"
+              name="signin-user-name"
               placeholder="Username"
               class="w-[80%] max-lg:w-[100%] mx-auto p-5 bg-[#f3f4f6] rounded-full m-5"
               autocomplete="username"
             />
             <input
               type="password"
-              id="password"
-              name="password"
+              id="signin-password"
+              name="signin-password"
               placeholder="password"
               class="w-[80%] max-lg:w-[100%] mx-auto p-5 bg-[#f3f4f6] rounded-full m-5"
               autocomplete="current-password"
             />
             <p class="w-[80%] max-lg:w-[100%] p-2 text-center">
-              <a href="/reset-password.html">Forgot Your Password &quest;</a>
+              <a href="./reset-password.html">Forgot Your Password &quest;</a>
             </p>
             <div class="w-[80%] max-lg:w-[100%] text-center mt-5">
               <button
                 class="py-2 px-6 bg-[#7c3aed] text-white cursor-pointer rounded-full"
+                id="sign-in"
               >
                 Sign In
               </button>
+            </div>
+            <div class="absolute w-full h-full top-0 left-0 bg-[#fff] opacity-[.8] justify-center items-center hidden" id="signin-res">
+              <div class="text-green-500 text-[25px] font-black hidden" id="signin-success">Logged In Successfully</div>
+              <div class="text-red-500 text-[25px] font-black hidden" id="signin-failed">Please Enter Valid User Name And Password</div>
             </div>
           </form>
           <div class="w-[80%] max-lg:w-[100%]">
@@ -143,13 +139,13 @@
             </button>
           </div>
         </div>
-        <div class="w-1/2 max-lg:w-full p-5 hidden group-[&[signup]]:block">
+        <div class="w-1/2 max-lg:w-full p-5 hidden group-[&[signup]]:block relative">
           <h2
             class="text-[36px] font-bold py-2 relative after:w-[20px] after:h-[3px] after:bg-black after:absolute after:-bottom-0 after:left-0"
           >
             Sign Up
           </h2>
-          <form action="" class="p-5">
+          <form action="" class="p-5" id="signup-form">
             <input
               type="text"
               id="signup-user-name"
@@ -188,6 +184,11 @@
                 Sign Up
               </button>
             </div>
+            <div class="absolute w-full h-full top-0 left-0 bg-[#fff] opacity-[.8] justify-center items-center hidden" id="signup-res">
+              <div class="text-green-500 text-[25px] font-black hidden" id="signup-success">Signned Up Successfully</div>
+              <div class="text-red-500 text-[25px] font-black hidden" id="found-user">Already Existing User Name Or Email</div>
+              <div class="text-red-500 text-[25px] font-black hidden" id="signup-failed">Please Fill All Fields With Valid Data And Identical Password And Confirm Password</div>
+            </div>
           </form>
           <div class="w-[80%] max-lg:w-[100%]">
             <p class="text-[22px] text-center font-bold p-5">Or Sign Up with</p>
@@ -208,19 +209,19 @@
       <div class="flex flex-wrap justify-around p-2">
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/about.html">
+            <a href="./about.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">About Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/contact.html">
+            <a href="./contact.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Contact Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/history.html">
+            <a href="./history.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Our history</span>
             </a>
@@ -228,19 +229,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/flight.html">
+            <a href="./flight.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Flights</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/hotel.html">
+            <a href="./hotel.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Hotels</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/car.html">
+            <a href="./car.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Car</span>
             </a>
@@ -248,19 +249,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/faq.html">
+            <a href="./faq.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">FAQ</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/terms.html">
+            <a href="./terms.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Terms &amp; Use</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/awards.html">
+            <a href="./awards.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Awards</span>
             </a>
@@ -279,23 +280,27 @@
       </div>
       <div class="flex flex-wrap justify-center my-5 py-5">
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv1.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv1.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv2.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv2.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv3.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv3.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv5.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv5.webp"
           alt="footer-pic"
         />
       </div>
@@ -305,6 +310,7 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/signin-up.js"></script>
   </body>
 </html>

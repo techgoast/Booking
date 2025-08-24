@@ -3,7 +3,10 @@
     {
       "destination": "One",
       "stars": 5,
-      "image": "/assets/images/trip1.webp",
+      "image": "trip1.webp",
+      "price": 50,
+      "duration": 4,
+      "type": "luxury",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Cairo"
@@ -42,7 +45,10 @@
     {
       "destination": "Tow",
       "stars": 5,
-      "image": "/assets/images/trip2.webp",
+      "image": "trip2.webp",
+      "price": 80,
+      "duration": 7,
+      "type": "luxury",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Emirates"
@@ -81,7 +87,10 @@
     {
       "destination": "Three",
       "stars": 5,
-      "image": "/assets/images/trip3.webp",
+      "image": "trip3.webp",
+      "price": 50,
+      "duration": 4,
+      "type": "premium",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Canada"
@@ -120,7 +129,10 @@
     {
       "destination": "Four",
       "stars": 5,
-      "image": "/assets/images/trip4.webp",
+      "image": "trip4.webp",
+      "price": 70,
+      "duration": 8,
+      "type": "standard",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Canada"
@@ -159,7 +171,10 @@
     {
       "destination": "Five",
       "stars": 5,
-      "image": "/assets/images/trip5.webp",
+      "image": "trip5.webp",
+      "price": 100,
+      "duration": 10,
+      "type": "premium",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Europe"
@@ -198,7 +213,10 @@
     {
       "destination": "Six",
       "stars": 5,
-      "image": "/assets/images/trip6.webp",
+      "image": "trip6.webp",
+      "price": 90,
+      "duration": 8,
+      "type": "luxury",
       "address": {
         "icon": "fa-solid fa-location-dot",
         "city":"Europe"

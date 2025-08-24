@@ -2,29 +2,29 @@
   "partners": [
     {
       "name": "corinthia",
-      "logo": "/assets/images/pngegg1.webp"
+      "logo": "pngegg1.webp"
     },
     {
       "name": "Hayatt",
-      "logo": "/assets/images/pngegg2.webp"
+      "logo": "pngegg2.webp"
     },
     {
       "name": "Accorhotels",
-      "logo": "/assets/images/pngegg.webp"
+      "logo": "pngegg.webp"
     },
     {
       "name": "Novotel",
-      "logo": "/assets/images/11.webp"
+      "logo": "11.webp"
     },
     {
       "name": "Helton",
-      "logo": "/assets/images/12.webp"
+      "logo": "12.webp"
     }
   ],
   "bestRooms": [
     {
       "type": "Single Room",
-      "image": "/assets/images/room1.webp",
+      "image": "room1.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -62,7 +62,7 @@
     },
     {
       "type": "Luxury Room",
-      "image": "/assets/images/room2.webp",
+      "image": "room2.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -100,7 +100,7 @@
     },
     {
       "type": "Double Room",
-      "image": "/assets/images/room3.webp",
+      "image": "room3.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -138,7 +138,7 @@
     },
     {
       "type": "Double Room",
-      "image": "/assets/images/room4.webp",
+      "image": "room4.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -176,7 +176,7 @@
     },
     {
       "type": "Luxury Room",
-      "image": "/assets/images/room5.webp",
+      "image": "room5.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -214,7 +214,7 @@
     },
     {
       "type": "Single Room",
-      "image": "/assets/images/room6.webp",
+      "image": "room6.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -252,7 +252,7 @@
     },
     {
       "type": "Single Room",
-      "image": "/assets/images/room1.webp",
+      "image": "room1.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -290,7 +290,7 @@
     },
     {
       "type": "Luxury Room",
-      "image": "/assets/images/room2.webp",
+      "image": "room2.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -328,7 +328,7 @@
     },
     {
       "type": "Double Room",
-      "image": "/assets/images/room3.webp",
+      "image": "room3.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -366,7 +366,7 @@
     },
     {
       "type": "Double Room",
-      "image": "/assets/images/room4.webp",
+      "image": "room4.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -404,7 +404,7 @@
     },
     {
       "type": "Luxury Room",
-      "image": "/assets/images/room5.webp",
+      "image": "room5.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"
@@ -442,7 +442,7 @@
     },
     {
       "type": "Single Room",
-      "image": "/assets/images/room6.webp",
+      "image": "room6.webp",
       "location": {
         "icon": "fa-solid fa-location-dot",
         "address":"123 Kathal St, Tampa City"

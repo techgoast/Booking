@@ -5,80 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="this is booking web site" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body class="font-sans">
     <!-- start nav -->
     <nav class="flex items-center justify-between p-5 font-semibold relative">
       <div class="logo">
-        <a href="/index.html">
+        <a href="./index.html">
           <img
-            class="w-40 aspect-auto object-cover"
-            src="/assets/images/logo.webp"
+            class="w-[160px] h-[50px] aspect-auto object-cover"
+            src="./assets/images/logo.webp"
             alt="logo"
           />
         </a>
       </div>
       <ul
-        class="w-1/2 flex items-center justify-evenly max-md:hidden data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
+        class="w-1/2 flex items-center justify-evenly max-md:hidden z-100 data-display:block data-display:absolute data-display:-bottom-full data-display:left-6 data-display:bg-white"
         id="nav-links"
       >
         <li>
-          <a href="/hotel.html">
+          <a href="./hotel.html">
             <i class="fa-solid fa-hotel"></i>
             <span class="mx-1">Hotel</span>
           </a>
         </li>
         <li>
-          <a href="/flight.html">
+          <a href="./flight.html">
             <i class="fa-solid fa-plane-up"></i>
             <span class="mx-1">Flight</span>
           </a>
         </li>
         <li>
-          <a href="/tour.html">
+          <a href="./tour.html">
             <i class="fa-solid fa-earth-americas"></i>
             <span class="mx-1">Tour</span>
           </a>
         </li>
         <li>
-          <a href="/car.html">
+          <a href="./car.html">
             <i class="fa-solid fa-car"></i>
             <span class="mx-1">Car</span>
           </a>
         </li>
       </ul>
       <button
-        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-2 px-4 cursor-pointer max-md:hidden data-display:block data-display:absolute data-display:-bottom-6 data-display:right-6"
+        class="bg-[#f5f3ff] rounded-xl text-[#7c3aed] py-3 px-5  cursor-pointer max-md:hidden data-display:block z-100 data-display:absolute data-display:-bottom-6 data-display:right-6"
         id="login-btn"
       >
-        <a href="/log-in.html">Log In / Sign Up</a>
+        <a href="./log-in.html" class="">Log In / Sign Up</a>
       </button>
       <div class="hidden max-md:block cursor-pointer" id="nav-menue">menue</div>
     </nav>
     <!-- end nav -->
     <!-- start landing section -->
     <section
-      class="min-h-[80vh] bg-[url(/assets/images/flight-bg.webp)] bg-no-repeat bg-cover bg-center relative after:w-full after:h-full after:bg-[#e0f2feeb] after:absolute after:top-0 after:left-0"
+      class="min-h-[80vh] bg-[url(../images/flight-bg.webp)] bg-no-repeat bg-cover bg-center relative after:w-full after:h-full after:bg-[#e0f2feeb] after:absolute after:top-0 after:left-0"
     >
       <div
-        class="relative z-1 h-full bg-[url(/assets/images/ab4.webp)] bg-no-repeat bg-contain bg-right"
+        class="relative z-1 h-full bg-[url(../images/ab4.webp)] bg-no-repeat bg-contain bg-right"
       >
         <div class="w-[70%] max-md:w-[100%] p-20 max-md:p-5">
           <div class="flex items-center">
-            <img width="30" src="/assets/images/plane.webp" alt="plane" />
+            <img class="w-[30px] h-[16px]" src="./assets/images/plane.webp" alt="plane" />
             <p class="mx-1 font-semibold">LETS ENJOY</p>
-            <img width="30" src="/assets/images/plane.webp" alt="plane" />
+            <img class="w-[30px] h-[16px]" src="./assets/images/plane.webp" alt="plane" />
           </div>
           <h2
             class="text-[50px] max-md:text-[36px] max-sm:text-[32px] font-bold my-20"
@@ -86,7 +77,7 @@
             <p>Book Your Next</p>
             <p>Trip In 4 Steps</p>
           </h2>
-          <form action="" class="bg-white rounded-2xl">
+          <form action="" class="bg-white rounded-2xl relative" id="flight-form">
             <div
               class="flex flex-wrap justify-center items-center gap-2 p-5 pb-0"
             >
@@ -99,6 +90,21 @@
                   placeholder="from"
                   id="from"
                 />
+                <div class="w-full hidden" id="flight-from-setter">
+                  <div class="p-2">
+                    <input type="radio" name="flight-from" id="flight-from-cairo" value="cairo" checked>
+                    <label for="flight-from-cairo">Cairo</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-from" id="flight-from-alex" value="alexandria">
+                    <label for="flight-from-alex">Alexandria</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-from" id="flight-from-hurghada" value="hurghada">
+                    <label for="flight-from-hurghada">Hurghada</label>
+                  </div>
+                  <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-from">Set Flight From</div>
+                </div>
               </div>
               <div class="w-[48%] max-sm:w-[100%] flex flex-wrap">
                 <label for="to">to</label>
@@ -109,6 +115,21 @@
                   placeholder="to"
                   id="to"
                 />
+                <div class="w-full hidden" id="flight-to-setter">
+                  <div class="p-2">
+                    <input type="radio" name="flight-to" id="flight-to-cairo" value="cairo" checked>
+                    <label for="flight-to-cairo">Cairo</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-to" id="flight-to-alex" value="alexandria">
+                    <label for="flight-to-alex">Alexandria</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-to" id="flight-to-hurghada" value="hurghada">
+                    <label for="flight-to-hurghada">Hurghada</label>
+                  </div>
+                  <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-to">Set Flight To</div>
+                </div>
               </div>
               <div class="w-[48%] max-sm:w-[100%] flex flex-wrap">
                 <label for="depart">departure</label>
@@ -149,6 +170,21 @@
                   placeholder="class"
                   id="class"
                 />
+                <div class="w-full hidden" id="flight-class-setter">
+                  <div class="p-2">
+                    <input type="radio" name="flight-class" id="flight-class-luxury" value="luxury" checked>
+                    <label for="flight-class-luxury">Luxury</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-class" id="flight-class-business" value="business">
+                    <label for="flight-class-business">Business</label>
+                  </div>
+                  <div class="p-2">
+                    <input type="radio" name="flight-class" id="flight-class-economy" value="economy">
+                    <label for="flight-class-economy">Economy</label>
+                  </div>
+                  <div class="bg-[#7c3aed] text-white p-3 rounded-lg cursor-pointer text-center" id="set-flight-class">Set Flight Class</div>
+                </div>
               </div>
             </div>
             <div class="text-center py-3">
@@ -159,6 +195,10 @@
                 <span>search flight</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
+            </div>
+            <div class="w-full h-full bg-[#fff] opacity-[.8] hidden absolute top-0 left-0 items-center justify-center" id="flight-submit-res">
+              <div class="text-green-500 text-[42px] font-black hidden" id="flight-res-succ">Your Request Has Been Successfully Sent</div>
+              <div class="text-red-500 text-[42px] font-black hidden" id="flight-res-failed">Please Fill All Fields</div>
             </div>
           </form>
         </div>
@@ -182,13 +222,13 @@
     <!-- end top destination -->
     <!-- start offer section -->
     <section
-      class="min-h-[80vh] bg-[url(/assets/images/os2.webp)] bg-no-repeat bg-contain bg-right bg-[#f5f3ff] my-20"
+      class="min-h-[80vh] max-[425px]:bg-[url(../images/os2-mob.webp)] min-[425px]:max-md:bg-[url(../images/os2-sm.webp)] md:bg-[url(../images/os2.webp)] bg-no-repeat bg-contain bg-right bg-[#f5f3ff] my-20"
     >
       <div class="p-10 max-sm:p-5 w-[80%] max-sm:w-[100%]">
         <div class="text-[#7c3aed] flex items-center">
-          <img width="30" src="/assets/images/plane.webp" alt="plane" />
+          <img class="w-[30px] h-[16px]" src="./assets/images/plane.webp" alt="plane" />
           <p class="mx-1">40&percnt; OFFER</p>
-          <img width="30" src="/assets/images/plane.webp" alt="plane" />
+          <img class="w-[30px] h-[16px]" src="./assets/images/plane.webp" alt="plane" />
         </div>
         <h2 class="text-[36px] font-bold my-10">Get Special Offer</h2>
         <p class="w-[50%] max-sm:w-[100%] my-10">
@@ -197,6 +237,7 @@
         </p>
         <button
           class="w-[200px] bg-[#7c3aed] text-white text-[20px] font-bold p-3 rounded-full cursor-pointer"
+          id="offer-btn"
         >
           Booking Now
         </button>
@@ -218,19 +259,19 @@
       <div class="flex flex-wrap justify-around p-2">
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/about.html">
+            <a href="./about.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">About Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/contact.html">
+            <a href="./contact.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Contact Us</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/history.html">
+            <a href="./history.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Our history</span>
             </a>
@@ -238,19 +279,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/flight.html">
+            <a href="./flight.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Flights</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/hotel.html">
+            <a href="./hotel.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Hotels</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/car.html">
+            <a href="./car.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Car</span>
             </a>
@@ -258,19 +299,19 @@
         </ul>
         <ul class="max-[340px]:w-full min-[340px]:max-md:w-1/2">
           <li class="py-2 my-3">
-            <a href="/faq.html">
+            <a href="./faq.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">FAQ</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/terms.html">
+            <a href="./terms.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Terms &amp; Use</span>
             </a>
           </li>
           <li class="py-2 my-3">
-            <a href="/awards.html">
+            <a href="./awards.html">
               <i class="fa-solid fa-circle-check text-[#7c3aed]"></i>
               <span class="mx-1">Awards</span>
             </a>
@@ -289,23 +330,27 @@
       </div>
       <div class="flex flex-wrap justify-center my-5 py-5">
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv1.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv1.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv2.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv2.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv3.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv3.webp"
           alt="footer-pic"
         />
         <img
-          class="w-80 rounded-xl m-3 aspect-3/2 object-cover"
-          src="/assets/images/pv5.webp"
+          loading="lazy"
+          class="w-[320px] h-[214px] rounded-xl m-3"
+          src="./assets/images/pv5.webp"
           alt="footer-pic"
         />
       </div>
@@ -315,7 +360,7 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/flight.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/flight.js"></script>
   </body>
 </html>

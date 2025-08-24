@@ -5,7 +5,7 @@ let viewLess = document.getElementById("view-less");
 
 let bestRomsData = [];
 window.addEventListener("load", async () => {
-  let res = await fetch("/assets/apis/hotel.json");
+  let res = await fetch("./assets/apis/hotel.json");
   let data = await res.json();
   bestRomsData = [...data.bestRooms];
   partnersUI(data.partners);
@@ -15,7 +15,7 @@ window.addEventListener("load", async () => {
 function partnersUI(data) {
   for (let i = 0; i < data.length; i++) {
     partners.innerHTML += `<li
-          class="w-[300px] h-[100px] bg-[url(${data[i].logo})] bg-no-repeat bg-center bg-contain my-5"
+          class="w-[300px] h-[100px] bg-[url(../images/${data[i].logo})] bg-no-repeat bg-center bg-contain my-5"
         ></li>`;
   }
 }
@@ -23,9 +23,9 @@ function partnersUI(data) {
 function bestRoomsUI(data) {
   for (let i = 0; i < data.length; i++) {
     bestRooms.innerHTML += `
-      <div class="w-[450px] max-w-[100%] shadow-md rounded-2xl">
+      <a href="./tour.html" class="w-[450px] max-w-[100%] shadow-md rounded-2xl">
         <div
-          class="w-full h-[250px] bg-[url(${
+          class="w-full h-[250px] bg-[url(../images/${
             data[i].image
           })] bg-no-repeat bg-cover rounded-t-2xl"
         ></div>
@@ -96,7 +96,7 @@ function bestRoomsUI(data) {
             </div>
           </div>
         </div>
-      </div>
+      </a>
     `;
   }
 }
@@ -114,3 +114,65 @@ viewLess.addEventListener("click", (e) => {
   e.target.toggleAttribute("data-display");
   viewMore.toggleAttribute("data-display");
 });
+
+const room = document.getElementById("room");
+const guestSetter = document.getElementById("guest-setter");
+const setGuest = document.getElementById("set-guest");
+const adults = document.getElementById("adults");
+const childs = document.getElementById("childs");
+const rooms = document.getElementById("rooms");
+const hotelSubmitRes = document.getElementById("hotel-submit-res");
+const hotelSubmitSuccess = document.getElementById("hotel-res-succ");
+const hotelSubmitFailed = document.getElementById("hotel-res-failed");
+const hotelForm = document.getElementById("hotel-form");
+
+room.addEventListener("focus", () => {
+  guestSetter.classList.remove("hidden");
+});
+
+// room.addEventListener("blur", () => {
+//   room.value = `${adults.value} Adults ${childs.value} Childs ${rooms.value} Rooms`
+//   guestSetter.classList.add("hidden");
+// });
+
+setGuest.addEventListener("click", () => {
+  room.value = `${adults.value} Adults ${childs.value} Childs ${rooms.value} Rooms`
+  guestSetter.classList.add("hidden");
+})
+
+hotelForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let formInputs = document.querySelectorAll("#hotel-form input");
+  let valid = true;
+  let formData = new FormData(hotelForm);
+  let formObj = Object.fromEntries(formData.entries());
+  for (const val of Object.values(formObj)) {
+    if (val === "") {
+      valid = false;
+      break;
+    }
+  }
+  if (!valid) {
+    hotelSubmitRes.classList.remove("hidden");
+    hotelSubmitRes.classList.add("flex");
+    hotelSubmitFailed.classList.remove("hidden");
+  } else {
+    hotelSubmitRes.classList.remove("hidden");
+    hotelSubmitRes.classList.add("flex");
+    hotelSubmitSuccess.classList.remove("hidden");
+    for (const inp of formInputs) {
+      if(inp.name === "adults" || inp.name === "childs" || inp.name === "rooms") {
+        inp.value = "1";
+      }else {
+        inp.value = ""
+      }
+    }
+  }
+})
+
+hotelSubmitRes.addEventListener("click", () => {
+  hotelSubmitRes.classList.remove("flex");
+  hotelSubmitRes.classList.add("hidden");
+  hotelSubmitFailed.classList.add("hidden");
+  hotelSubmitSuccess.classList.add("hidden");
+})

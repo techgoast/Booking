@@ -2,27 +2,27 @@
   "partners": [
     {
       "name": "Singabour Airlines",
-      "logo": "/assets/images/pngwing1.webp"
+      "logo": "pngwing1.webp"
     },
     {
       "name": "Turkish Airlines",
-      "logo": "/assets/images/pngwing2.webp"
+      "logo": "pngwing2.webp"
     },
     {
       "name": "American Airlines",
-      "logo": "/assets/images/pngwing3.webp"
+      "logo": "pngwing3.webp"
     },
     {
       "name": "Amerimexico Airlines",
-      "logo": "/assets/images/pngwing4.webp"
+      "logo": "pngwing4.webp"
     },
     {
       "name": "Ettihad Airlines",
-      "logo": "/assets/images/pngwing5.webp"
+      "logo": "pngwing5.webp"
     },
     {
       "name": "Iberia Airlines",
-      "logo": "/assets/images/pngwing6.webp"
+      "logo": "pngwing6.webp"
     }
   ],
   "topDestinations": [
@@ -30,55 +30,64 @@
       "city": "North Male Atoll",
       "country": "Maldives",
       "cost": 289,
-      "image": "/assets/images/MLE.webp"
+      "image": "MLE.webp",
+      "image2": "MLE-2.webp"
     },
     {
       "city": "Ibiza",
       "country": "Spain",
       "cost": 299,
-      "image": "/assets/images/ibiza.webp"
+      "image": "ibiza.webp",
+      "image2": "ibiza-2.webp"
     },
     {
       "city": "Hurghada",
       "country": "Egypt",
       "cost": 53,
-      "image": "/assets/images/hurghada.webp"
+      "image": "hurghada.webp",
+      "image2": "hurghada-2.webp"
     },
     {
       "city": "Copenhagen",
       "country": "Denmark",
       "cost": 221,
-      "image": "/assets/images/copenhagen.webp"
+      "image": "copenhagen.webp",
+      "image2": "copenhagen-2.webp"
     },
     {
       "city": "Marsa Alam City",
       "country": "Egypt",
       "cost": 133,
-      "image": "/assets/images/marsaalam.webp"
+      "image": "marsaalam.webp",
+      "image2": "marsaalam-2.webp"
     },
     {
       "city": "Jazan",
       "country": "Saudi Arabia",
       "cost": 202,
-      "image": "/assets/images/jazan.webp"
+      "image": "jazan.webp",
+      "image2": "jazan-2.webp"
     },
     {
       "city": "Beirut",
       "country": "Lebanon",
       "cost": 183,
-      "image": "/assets/images/beirut.webp"
+      "image": "beirut.webp",
+      "image2": "beirut-2.webp"
     },
     {
       "city": "Istanbul",
       "country": "Turkey",
       "cost": 182,
-      "image": "/assets/images/istanbul.webp"
+      "image": "istanbul.webp",
+      "image2": "istanbul-2.webp"
     },
     {
       "city": "Barcelona",
       "country": "Spain",
       "cost": 199,
-      "image": "/assets/images/barcelona.webp"
+      "image": "barcelona.webp",
+      "image2": "barcelona-2.webp"
     }
   ]
 }

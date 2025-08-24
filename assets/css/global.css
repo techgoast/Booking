@@ -1,5 +1,18 @@
-/* @import "tailwindcss";
-
-@theme {
-  --color-btn-bg: oklch(94.3% 0.029 294.588);
-} */
+@import "tailwindcss";
+@source inline("bg-[url(../images/{intro-xlg,intro-lg,intro-md,intro-sm,intro-mob}.webp)]");
+@source inline("bg-[url(../images/{home-hurghada,home-dest,home-copenhagen}.webp)]");
+@source inline("bg-[url(../images/{adventure,phone,phone-2}.webp)]");
+@source inline("bg-[url(../images/{photo-mob,photo-md,photo-lg,photo-xlg}.webp)]");
+@source inline("bg-[url(../images/{price-bg,price-1,price-2}.webp)]");
+@source inline("bg-[url(../images/{hotel-bg,hotel-bg-md,hotel-bg-mob}.webp)]");
+@source inline("bg-[url(../images/{pngegg1,pngegg2,pngegg,11,12}.webp)]");
+@source inline("bg-[url(../images/{room1,room2,room3,room4,room5,room6,hotel-last}.webp)]");
+@source inline("bg-[url(../images/{rc-hero,rc-hero-xlg,rc-hero-lg,rc-hero-md,rc-hero-mob}.webp)]");
+@source inline("bg-[url(../images/{car-economy,car-standard,car-suv}.webp)]");
+@source inline("bg-[url(../images/{flight-bg,ab4}.webp)]");
+@source inline("bg-[url(../images/{pngwing1,pngwing2,pngwing3,pngwing4,pngwing5,pngwing6}.webp)]");
+@source inline("bg-[url(../images/{MLE,MLE-2,ibiza,ibiza-2,hurghada,hurghada-2}.webp)]");
+@source inline("bg-[url(../images/{copenhagen,copenhagen-2,marsaalam,marsaalam-2}.webp)]");
+@source inline("bg-[url(../images/{jazan,jazan-2,beirut,beirut-2,os2,os2-sm,os2-mob}.webp)]");
+@source inline("bg-[url(../images/{istanbul,istanbul-2,barcelona,barcelona-2}.webp)]");
+@source inline("bg-[url(../images/{trip1,trip2,trip3,trip4,trip5,trip6}.webp)]");

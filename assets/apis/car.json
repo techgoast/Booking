@@ -3,49 +3,49 @@
     {
       "class": "Economy",
       "cost": "37 / day",
-      "image": "/assets/images/car-economy.webp"
+      "image": "car-economy.webp"
     },
     {
       "class": "Standard",
       "cost": "47 / day",
-      "image": "/assets/images/car-standard.webp"
+      "image": "car-standard.webp"
     },
     {
       "class": "SUV",
       "cost": "57 / day",
-      "image": "/assets/images/car-suv.webp"
+      "image": "car-suv.webp"
     },
     {
       "class": "Economy",
       "cost": "37 / day",
-      "image": "/assets/images/car-economy.webp"
+      "image": "car-economy.webp"
     },
     {
       "class": "Standard",
       "cost": "47 / day",
-      "image": "/assets/images/car-standard.webp"
+      "image": "car-standard.webp"
     },
     {
       "class": "SUV",
       "cost": "57 / day",
-      "image": "/assets/images/car-suv.webp"
+      "image": "car-suv.webp"
     }
   ],
   "safetyPractices":[
     {
-      "iconImage": "/assets/images/sanitize.webp",
+      "iconImage": "sanitize.webp",
       "desc": "Internal & External Sanitization"
     },
     {
-      "iconImage": "/assets/images/carkey.webp",
+      "iconImage": "carkey.webp",
       "desc": "Contact-Less Doorstep Pick-up"
     },
     {
-      "iconImage": "/assets/images/hygiene.webp",
+      "iconImage": "hygiene.webp",
       "desc": "Safety & Hygiene & Best Practices"
     },
     {
-      "iconImage": "/assets/images/advsry-cab.webp",
+      "iconImage": "advsry-cab.webp",
       "desc": "Travel Advisory"
     }
   ]
